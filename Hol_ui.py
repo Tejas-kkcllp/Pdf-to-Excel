@@ -84,13 +84,12 @@ def word_to_pdf(docx_file):
         with open(temp_docx_path, "wb") as f:
             f.write(docx_file.getvalue())
         
-        convert(temp_docx_path, temp_pdf_path)
+        subprocess.run(['libreoffice', '--convert-to', 'pdf', '--outdir', temp_dir, temp_docx_path])
         
         with open(temp_pdf_path, "rb") as f:
             pdf_data = f.read()
     
     return pdf_data
-
 # Streamlit app
 def main():
     st.title("Document Converter")
