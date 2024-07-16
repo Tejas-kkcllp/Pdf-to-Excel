@@ -3,4 +3,5 @@ openpyxl
 pandas
 numpy
 pdfplumber
+ocx2pdf
 # Add any other dependencies here
