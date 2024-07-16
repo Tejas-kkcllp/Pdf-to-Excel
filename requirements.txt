@@ -5,4 +5,5 @@ numpy
 pdfplumber
 docx2pdf
 xlsxwriter
+docx2pdf
 # Add any other dependencies here
