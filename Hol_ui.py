@@ -96,7 +96,7 @@ def main():
     st.title("Document Converter")
 
     option = st.radio("Choose conversion type:", 
-                      ("PDF to Excel"))
+                      ("Word to PDF", "PDF to Excel"))
 
     if option == "Word to PDF":
         st.subheader("Word to PDF Converter")
